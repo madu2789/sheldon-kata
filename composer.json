@@ -1,0 +1,35 @@
+{
+    "name": "signaturit_test",
+    "type": "project",
+    "description": "skeleton repository to start with our coding katas.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Madurell",
+            "email": "madu2789@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "mikey179/vfsStream": "^1.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kata\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KataTest\\": "tests"
+        }
+    },
+    "scripts": {
+        "test-unit": "phpunit",
+        "format": "phpcbf --standard=psr2 src/"
+    },
+    "minimum-stability": "stable"
+}
